@@ -14,7 +14,7 @@ const HomePage = () => {
         style={{ backgroundImage: `url(${bg})` }}
       >
         <SearchBox />
-        <div className="flex flex-col md:flex-row justify-around p-20 ">
+        <div className="flex flex-col justify-around md:flex-row md:justify-center items-center  ">
           <div className="m-[12px]">
             <TracksCard />
           </div>
