@@ -27,7 +27,7 @@ const HomePage = () => {
         <SearchBox search={search} />
         <div className="flex flex-col justify-around md:flex-row md:justify-center items-center  ">
           <div className="m-[12px]">
-            <TracksCard />
+            <TracksCard search={searchResults}/>
           </div>
           <div className="m-[12px]">
             <Playlist />
