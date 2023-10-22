@@ -1,4 +1,5 @@
 import './index.css';
+import Track from './Track';
 const TracksCard = (props) => {
   return (
     <div className="bg-[#211555] w-[400px] min-h-[500px] text-white rounded">
@@ -7,10 +8,10 @@ const TracksCard = (props) => {
         
       {props.search.map((track) => {
         return(
-        <div className="Track"  key={track.id}>
-      <h3>{track.name}</h3>
-      <p>{track.artist} | <span>{track.album}</span></p>
-      </div>
+          <Track trackid={track.id}
+          name={track.name}
+          artist={ track.artist}
+          album={track.album}  />
         );
       })
       } 
