@@ -1,7 +1,7 @@
 // ** Images imports
 import { useState } from "react";
 import bg from "../../assets/images/background_photo_desktop.jpg";
-// import Playlist from "../../components/playlist";
+import Playlist from "../../components/playlist";
 
 // ** Components imports
 import SearchBox from "../../components/searchbox";
@@ -18,6 +18,7 @@ const HomePage = () => {
   const search = (text) => {
     Spotify.search(text).then(setSearchResults);
   };
+  // return here
   return (
     <>
       <div
